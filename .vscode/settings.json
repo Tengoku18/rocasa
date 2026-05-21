@@ -1,0 +1,28 @@
+{
+  // Auto-save files after a short idle delay (1 second).
+  // Other options: "off", "onFocusChange", "onWindowChange".
+  // "afterDelay" is the most common — keeps the file in sync without losing focus.
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+
+  // Format every save with Prettier (works in tandem with autoSave)
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Run ESLint auto-fixes on save (catches simple issues without manual triggers)
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // Per-language: force Prettier even if another extension tries to claim the language
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  // Tell the ESLint extension which file types to lint inline
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+}

@@ -1,0 +1,15 @@
+# .editorconfig — keeps non-VS-Code editors in sync with Prettier settings.
+# Docs: https://editorconfig.org/
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+# Markdown trailing whitespace can be meaningful (hard line breaks)
+trim_trailing_whitespace = false
