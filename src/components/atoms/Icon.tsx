@@ -25,7 +25,8 @@ export type IconName =
   | 'home'
   | 'search'
   | 'chevron-right'
-  | 'users';
+  | 'users'
+  | 'briefcase';
 
 export function Icon({ name, size = 20, className = '', ...rest }: IconProps) {
   const common = {
@@ -174,6 +175,14 @@ export function Icon({ name, size = 20, className = '', ...rest }: IconProps) {
           <path d="M3.5 20c.7-3 3-4.5 5.5-4.5s4.8 1.5 5.5 4.5" />
           <circle cx="16.5" cy="9" r="2.4" />
           <path d="M14.5 14.6c2-.5 4.4.4 5.5 2.4" />
+        </svg>
+      );
+    case 'briefcase':
+      return (
+        <svg {...common}>
+          <rect x="3" y="7" width="18" height="13" rx="2" />
+          <path d="M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7" />
+          <path d="M3 12h18" />
         </svg>
       );
     default:

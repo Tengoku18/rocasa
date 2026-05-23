@@ -6,7 +6,7 @@ import { Badge } from '../atoms/Badge';
 const SERVICES = [
   {
     icon: 'home' as const,
-    title: 'Sale & Purchase',
+    title: 'Sale & Purchase — Residential & Commercial',
     description:
       'End-to-end conveyancing for residential and commercial property — from Contract of Sale through to PEXA settlement.',
     bullets: ['Residential homes & units', 'Commercial & industrial', 'PEXA e-settlement'],
@@ -31,6 +31,13 @@ const SERVICES = [
     description:
       'Structured house-and-land split contracts handled end-to-end — land transfer and building works coordinated cleanly.',
     bullets: ['Land + build coordination', 'Stamp duty optimisation', 'Builder liaison'],
+  },
+  {
+    icon: 'briefcase' as const,
+    title: 'Purchase & Sale of Business',
+    description:
+      'Conveyancing for business acquisitions and sales — contract review, asset transfer, lease assignment and goodwill handled end-to-end.',
+    bullets: ['Asset & share transfers', 'Lease & licence assignment', 'Vendor & purchaser due diligence'],
   },
   {
     icon: 'document' as const,

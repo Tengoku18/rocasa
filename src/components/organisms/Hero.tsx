@@ -13,20 +13,27 @@ export function Hero() {
     >
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 opacity-[0.07]"
+        className="absolute inset-0 -z-10"
         style={{
           backgroundImage:
-            'radial-gradient(circle at 20% 10%, #D0A455 0%, transparent 40%), radial-gradient(circle at 80% 80%, #FAF0BC 0%, transparent 35%)',
+            'radial-gradient(80% 60% at 15% 0%, rgba(208,164,85,0.18) 0%, transparent 60%), radial-gradient(70% 60% at 100% 100%, rgba(250,240,188,0.10) 0%, transparent 55%), radial-gradient(45% 50% at 50% 110%, rgba(208,164,85,0.08) 0%, transparent 70%)',
         }}
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10"
+        className="absolute inset-0 -z-10 opacity-60 mix-blend-soft-light"
         style={{
           backgroundImage:
-            'linear-gradient(transparent 95%, rgba(208,164,85,0.08) 95%), linear-gradient(90deg, transparent 95%, rgba(208,164,85,0.08) 95%)',
-          backgroundSize: '60px 60px',
+            'linear-gradient(120deg, transparent 0%, rgba(208,164,85,0.06) 45%, transparent 55%, rgba(250,240,188,0.04) 80%, transparent 100%)',
         }}
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-32 -right-24 -z-10 h-105 w-105 rounded-full bg-[#D0A455]/10 blur-3xl"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -bottom-40 -left-20 -z-10 h-90 w-90 rounded-full bg-[#FAF0BC]/6 blur-3xl"
       />
 
       <Container size="xl">
