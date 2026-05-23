@@ -34,6 +34,15 @@ export function Header() {
     };
   }, [open]);
 
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [open]);
+
   return (
     <>
       <div className="hidden lg:block bg-[#08162D] text-white text-xs">
@@ -91,43 +100,94 @@ export function Header() {
 
             <button
               type="button"
-              aria-label={open ? 'Close menu' : 'Open menu'}
+              aria-label="Open menu"
               aria-expanded={open}
-              onClick={() => setOpen((o) => !o)}
+              aria-controls="mobile-sidebar"
+              onClick={() => setOpen(true)}
               className="lg:hidden grid h-11 w-11 place-items-center rounded-lg border border-[#08162D]/15 text-[#08162D] cursor-pointer transition-colors duration-200 hover:bg-[#FAF0BC]"
             >
-              <Icon name={open ? 'close' : 'menu'} size={22} />
+              <Icon name="menu" size={22} />
             </button>
           </div>
         </Container>
-
-        {open ? (
-          <div className="lg:hidden border-t border-[#08162D]/10 bg-white">
-            <Container size="xl">
-              <nav aria-label="Mobile" className="flex flex-col gap-1 py-4">
-                {NAV.map((item) => (
-                  <a
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setOpen(false)}
-                    className="rounded-lg px-3 py-3 text-[15px] font-medium text-[#08162D] cursor-pointer transition-colors duration-200 hover:bg-[#FAF0BC] hover:text-[#08162D]"
-                  >
-                    {item.label}
-                  </a>
-                ))}
-                <div className="mt-3 flex flex-col gap-2 border-t border-[#08162D]/10 pt-4">
-                  <Button href={business.phoneHref} variant="outline" size="md" iconLeft={<Icon name="phone" size={16} />}>
-                    {business.phone}
-                  </Button>
-                  <Button href="#contact" variant="primary" size="md" iconRight={<Icon name="arrow-right" size={16} />}>
-                    Request a quote
-                  </Button>
-                </div>
-              </nav>
-            </Container>
-          </div>
-        ) : null}
       </header>
+
+      <div
+        aria-hidden={!open}
+        onClick={() => setOpen(false)}
+        className={`fixed inset-0 z-50 bg-[#08162D]/60 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
+          open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+        }`}
+      />
+
+      <aside
+        id="mobile-sidebar"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Mobile navigation"
+        className={`fixed inset-y-0 left-0 z-50 flex w-[86%] max-w-sm flex-col bg-white shadow-[8px_0_32px_-12px_rgba(8,22,45,0.35)] transition-transform duration-300 ease-out lg:hidden ${
+          open ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
+        <div className="flex items-center justify-between border-b border-[#08162D]/10 px-5 py-4">
+          <Logo />
+          <button
+            type="button"
+            aria-label="Close menu"
+            onClick={() => setOpen(false)}
+            className="grid h-11 w-11 place-items-center rounded-lg border border-[#08162D]/15 text-[#08162D] cursor-pointer transition-colors duration-200 hover:bg-[#FAF0BC]"
+          >
+            <Icon name="close" size={22} />
+          </button>
+        </div>
+
+        <nav aria-label="Mobile" className="flex-1 overflow-y-auto px-5 py-6">
+          <ul className="flex flex-col gap-1">
+            {NAV.map((item) => (
+              <li key={item.href}>
+                <a
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  className="flex items-center justify-between rounded-xl px-4 py-3.5 text-[16px] font-semibold text-[#08162D] cursor-pointer transition-colors duration-200 hover:bg-[#FAF0BC]"
+                >
+                  <span>{item.label}</span>
+                  <Icon name="chevron-right" size={16} className="text-[#D0A455]" />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <div className="border-t border-[#08162D]/10 bg-[#FAF0BC]/30 px-5 py-5">
+          <div className="flex flex-col gap-2.5">
+            <Button
+              href={business.phoneHref}
+              variant="outline"
+              size="md"
+              fullWidth
+              iconLeft={<Icon name="phone" size={16} />}
+            >
+              {business.phone}
+            </Button>
+            <Button
+              href="#contact"
+              variant="primary"
+              size="md"
+              fullWidth
+              iconRight={<Icon name="arrow-right" size={16} />}
+            >
+              Request a quote
+            </Button>
+          </div>
+          <a
+            href={business.emailHref}
+            className="mt-4 flex items-center gap-2 text-xs text-[#475569] cursor-pointer transition-colors hover:text-[#08162D]"
+          >
+            <Icon name="mail" size={14} className="text-[#D0A455]" />
+            {business.email}
+          </a>
+        </div>
+      </aside>
     </>
   );
 }

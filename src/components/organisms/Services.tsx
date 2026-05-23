@@ -19,20 +19,6 @@ const SERVICES = [
     bullets: ['Title & council searches', 'Liaison with lenders', 'PEXA e-settlement'],
   },
   {
-    icon: 'building' as const,
-    title: 'Structural Inspection',
-    description:
-      'Engineer-led pre-purchase inspection identifying defects, movement and compliance issues before you commit.',
-    bullets: ['On-site assessment', 'Detailed photo report', 'Repair-cost guidance'],
-  },
-  {
-    icon: 'shield-check' as const,
-    title: 'Dilapidation Survey',
-    description:
-      'Independent dilapidation reporting for neighbouring works, council requirements or insurance disputes.',
-    bullets: ['Pre & post-works surveys', 'NSW compliant', 'Court-ready evidence'],
-  },
-  {
     icon: 'gavel' as const,
     title: 'JP Witnessing',
     description:
@@ -41,10 +27,24 @@ const SERVICES = [
   },
   {
     icon: 'key' as const,
-    title: 'Off-the-Plan Purchases',
+    title: 'Off the Plan & Vacant Land',
     description:
-      'Specialised review of complex off-the-plan contracts, sunset clauses, strata documents and final inspections.',
+      'Specialised review of off-the-plan and vacant land contracts, sunset clauses, strata documents and final inspections.',
     bullets: ['Strata report review', 'Sunset clause checks', 'Final inspection support'],
+  },
+  {
+    icon: 'scale' as const,
+    title: 'Split Contract',
+    description:
+      'Structured house-and-land split contracts handled end-to-end — land transfer and building works coordinated cleanly.',
+    bullets: ['Land + build coordination', 'Stamp duty optimisation', 'Builder liaison'],
+  },
+  {
+    icon: 'building' as const,
+    title: 'Purchase & Sale of Business',
+    description:
+      'Commercial conveyancing for business acquisitions and sales — asset transfers, leases, licences and goodwill protected.',
+    bullets: ['Asset & lease transfers', 'Licence & permit checks', 'Vendor warranties review'],
   },
 ];
 

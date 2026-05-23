@@ -33,7 +33,7 @@ export function Hero() {
       <Container size="xl">
         <div className="grid gap-12 py-20 sm:py-24 lg:grid-cols-12 lg:gap-12 lg:py-32">
           <div className="lg:col-span-7">
-            <Badge tone="gold" icon={<Icon name="shield-check" size={12} />}>
+            <Badge tone="gold">
               Licensed Conveyancer · JP (NSW)
             </Badge>
 
