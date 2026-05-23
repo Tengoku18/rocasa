@@ -24,7 +24,8 @@ export type IconName =
   | 'key'
   | 'home'
   | 'search'
-  | 'chevron-right';
+  | 'chevron-right'
+  | 'users';
 
 export function Icon({ name, size = 20, className = '', ...rest }: IconProps) {
   const common = {
@@ -164,6 +165,15 @@ export function Icon({ name, size = 20, className = '', ...rest }: IconProps) {
       return (
         <svg {...common}>
           <path d="m9 6 6 6-6 6" />
+        </svg>
+      );
+    case 'users':
+      return (
+        <svg {...common}>
+          <circle cx="9" cy="8" r="3.2" />
+          <path d="M3.5 20c.7-3 3-4.5 5.5-4.5s4.8 1.5 5.5 4.5" />
+          <circle cx="16.5" cy="9" r="2.4" />
+          <path d="M14.5 14.6c2-.5 4.4.4 5.5 2.4" />
         </svg>
       );
     default:

@@ -4,7 +4,7 @@ import { ServiceSplit } from '../components/organisms/ServiceSplit';
 import { Services } from '../components/organisms/Services';
 import { About } from '../components/organisms/About';
 import { Process } from '../components/organisms/Process';
-import { Testimonials } from '../components/organisms/Testimonials';
+import { FAQs } from '../components/organisms/FAQs';
 import { CTA } from '../components/organisms/CTA';
 import { Contact } from '../components/organisms/Contact';
 import { Footer } from '../components/organisms/Footer';
@@ -19,7 +19,7 @@ export default function Home() {
         <Services />
         <About />
         <Process />
-        <Testimonials />
+        <FAQs />
         <CTA />
         <Contact />
       </main>

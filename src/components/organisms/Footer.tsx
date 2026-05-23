@@ -7,10 +7,12 @@ const FOOTER_NAV = [
   {
     title: 'Services',
     links: [
-      { label: 'Contract review', href: '#services' },
-      { label: 'Property settlement', href: '#services' },
-      { label: 'Structural inspection', href: '#services' },
-      { label: 'Dilapidation survey', href: '#services' },
+      { label: 'Sale & purchase', href: '#services' },
+      { label: 'Off the plan & vacant land', href: '#services' },
+      { label: 'Pest & building inspection', href: '#services' },
+      { label: 'Simultaneous settlement', href: '#services' },
+      { label: 'Strata report', href: '#services' },
+      { label: 'First home buyer help', href: '#services' },
       { label: 'JP witnessing', href: '#services' },
     ],
   },
@@ -19,7 +21,7 @@ const FOOTER_NAV = [
     links: [
       { label: 'About Rocasa', href: '#about' },
       { label: 'Our process', href: '#process' },
-      { label: 'Testimonials', href: '#testimonials' },
+      { label: 'FAQs', href: '#faqs' },
       { label: 'Contact', href: '#contact' },
     ],
   },
@@ -33,9 +35,9 @@ export function Footer() {
           <div className="lg:col-span-5">
             <Logo variant="light" />
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-white/65">
-              Engineering consultant, licensed conveyancer &amp; JP (NSW) —
-              safeguarding property transactions across Sydney and New South
-              Wales.
+              Licensed Conveyancer &amp; JP (NSW) — safeguarding property
+              transactions across Sydney and New South Wales with fixed fees
+              and PEXA settlements.
             </p>
 
             <div className="mt-7 space-y-3 text-sm">
@@ -98,12 +100,12 @@ export function Footer() {
                 Justice of the Peace (NSW)
               </li>
               <li className="flex items-center gap-2">
-                <Icon name="building" size={16} className="text-[#D0A455]" />
-                Engineering Consultant
-              </li>
-              <li className="flex items-center gap-2">
                 <Icon name="check" size={16} className="text-[#D0A455]" />
                 PEXA accredited
+              </li>
+              <li className="flex items-center gap-2">
+                <Icon name="document" size={16} className="text-[#D0A455]" />
+                Fixed-fee transparency
               </li>
             </ul>
           </div>

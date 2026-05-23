@@ -24,7 +24,7 @@ export const theme = {
 
 export const business = {
   name: 'Rocasa Conveyancing',
-  tagline: 'Licensed Conveyancer · JP (NSW) · Engineering Consultant',
+  tagline: 'Licensed Conveyancer · JP (NSW) · Sydney',
   phone: '+61 404 674 706',
   phoneHref: 'tel:+61404674706',
   email: 'khem@rocasaconveyancing.com.au',

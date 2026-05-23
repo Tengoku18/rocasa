@@ -17,24 +17,25 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: 'Rocasa Conveyancing | Licensed Conveyancer & Engineering Consultant — Sydney NSW',
+  title: 'Rocasa Conveyancing | Licensed Conveyancer & JP — Sydney NSW',
   description:
-    'Sydney-based dual practice combining licensed conveyancing, JP services and engineering consultancy. Pre-purchase structural inspections, contract reviews and PEXA settlements across NSW.',
+    'Sydney-based licensed conveyancing and JP services. Contract reviews, property settlements via PEXA, off-the-plan and business conveyancing across NSW.',
   keywords: [
     'Rocasa Conveyancing',
     'Sydney conveyancer',
     'NSW conveyancing',
-    'engineering consultant',
+    'licensed conveyancer',
     'JP services',
-    'pre-purchase inspection',
     'contract of sale review',
     'PEXA settlement',
+    'off the plan conveyancing',
+    'business conveyancing',
   ],
   authors: [{ name: 'Rocasa Conveyancing' }],
   openGraph: {
-    title: 'Rocasa Conveyancing — Engineering meets Conveyancing',
+    title: 'Rocasa Conveyancing — Sydney Licensed Conveyancer & JP',
     description:
-      'Property transfers handled by a licensed conveyancer with an engineer’s eye. Sydney NSW.',
+      'Property transfers handled with care. Licensed conveyancer and JP, based in Sydney NSW.',
     type: 'website',
     locale: 'en_AU',
   },

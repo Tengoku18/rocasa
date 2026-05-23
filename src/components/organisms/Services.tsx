@@ -5,32 +5,25 @@ import { Badge } from '../atoms/Badge';
 
 const SERVICES = [
   {
-    icon: 'document' as const,
-    title: 'Contract of Sale Review',
-    description:
-      'A thorough review of every clause before you sign — special conditions, easements, zoning and disclosure obligations.',
-    bullets: ['Plain-English summary', 'Risk flagged in 48hrs', 'Negotiation guidance'],
-  },
-  {
     icon: 'home' as const,
-    title: 'Property Settlement',
+    title: 'Sale & Purchase',
     description:
-      'End-to-end management of your settlement, with secure PEXA electronic transfer of funds and title.',
-    bullets: ['Title & council searches', 'Liaison with lenders', 'PEXA e-settlement'],
-  },
-  {
-    icon: 'gavel' as const,
-    title: 'JP Witnessing',
-    description:
-      'Official witnessing of statutory declarations, affidavits and certification of true copies — by appointment.',
-    bullets: ['Stat decs & affidavits', 'Certified copies', 'On-site availability'],
+      'End-to-end conveyancing for residential and commercial property — from Contract of Sale through to PEXA settlement.',
+    bullets: ['Residential homes & units', 'Commercial & industrial', 'PEXA e-settlement'],
   },
   {
     icon: 'key' as const,
     title: 'Off the Plan & Vacant Land',
     description:
       'Specialised review of off-the-plan and vacant land contracts, sunset clauses, strata documents and final inspections.',
-    bullets: ['Strata report review', 'Sunset clause checks', 'Final inspection support'],
+    bullets: ['Strata report review', 'Sunset clause checks', 'Zoning & council checks'],
+  },
+  {
+    icon: 'shield-check' as const,
+    title: 'Pest & Building Inspection',
+    description:
+      'Coordination of independent pest and building inspections before exchange — so you know exactly what you’re buying.',
+    bullets: ['Licensed inspector network', 'Pre-exchange reporting', 'Repair-cost guidance'],
   },
   {
     icon: 'scale' as const,
@@ -40,11 +33,60 @@ const SERVICES = [
     bullets: ['Land + build coordination', 'Stamp duty optimisation', 'Builder liaison'],
   },
   {
-    icon: 'building' as const,
-    title: 'Purchase & Sale of Business',
+    icon: 'document' as const,
+    title: 'Transfer of Lease',
     description:
-      'Commercial conveyancing for business acquisitions and sales — asset transfers, leases, licences and goodwill protected.',
-    bullets: ['Asset & lease transfers', 'Licence & permit checks', 'Vendor warranties review'],
+      'Lease transfers for tenants, landlords or business buyers — assigning rights and obligations correctly under NSW law.',
+    bullets: ['Tenant & landlord consent', 'Bond & security transfer', 'Lease assignment'],
+  },
+  {
+    icon: 'clock' as const,
+    title: 'Simultaneous Settlement',
+    description:
+      'Selling and buying on the same day — coordinated cleanly so you avoid bridging finance and double-moves.',
+    bullets: ['Sale + purchase same day', 'Lender coordination', 'Single move date'],
+  },
+  {
+    icon: 'gavel' as const,
+    title: 'JP Witnessing',
+    description:
+      'Official witnessing of statutory declarations, affidavits and certification of true copies — by appointment.',
+    bullets: ['Stat decs & affidavits', 'Certified copies', 'On-site availability'],
+  },
+  {
+    icon: 'building' as const,
+    title: 'Strata Report',
+    description:
+      'Strata search and report review for apartments and townhouses — uncovering by-laws, levies, special funds and disputes.',
+    bullets: ['Owners corporation records', 'Levy & special-fund review', 'By-law compliance'],
+  },
+  {
+    icon: 'sparkle' as const,
+    title: 'First Home Buyer Assistance',
+    description:
+      'Step-by-step help for first home buyers, including First Home Owner Grant and stamp duty concession applications.',
+    bullets: ['FHOG application support', 'Stamp duty concessions', 'First-buyer roadmap'],
+  },
+  {
+    icon: 'search' as const,
+    title: 'Property Division',
+    description:
+      'Property settlements arising from divorce, family arrangements or business splits — handled with discretion and care.',
+    bullets: ['Family law settlements', 'Title restructure', 'Stamp duty exemptions'],
+  },
+  {
+    icon: 'key' as const,
+    title: 'Separation on Title',
+    description:
+      'Removing or adding parties to title following separation, divorce or estate matters — done cleanly and quickly.',
+    bullets: ['Title transfers', 'Spousal exemptions', 'Land Registry lodgement'],
+  },
+  {
+    icon: 'users' as const,
+    title: 'Part Tenancy & Related Party Transfers',
+    description:
+      'Transfers between family members, business partners or trusts — including part-ownership and related-party arrangements.',
+    bullets: ['Family & spousal transfers', 'Trust & partnership transfers', 'Tenancy share changes'],
   },
 ];
 
@@ -62,7 +104,7 @@ export function Services() {
                 in NSW
               </>
             }
-            description="From the first inspection to the final settlement, every step is handled by a licensed conveyancer with a structural engineering background."
+            description="From your first contract review to the final settlement, every step is handled by a licensed NSW conveyancer with fixed-fee transparency."
           />
           <Badge tone="cream">NSW-wide · PEXA accredited</Badge>
         </div>

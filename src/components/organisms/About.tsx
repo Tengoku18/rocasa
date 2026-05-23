@@ -34,7 +34,7 @@ export function About() {
                   <div>
                     <div className="font-semibold">Khem</div>
                     <div className="text-xs text-white">
-                      Licensed Conveyancer · JP (NSW) · Engineering Consultant
+                      Licensed Conveyancer · JP (NSW)
                     </div>
                   </div>
                 </div>
@@ -47,11 +47,11 @@ export function About() {
               eyebrow="About Rocasa"
               title={
                 <>
-                  Two disciplines.{' '}
-                  <span className="text-[#D0A455]">One trusted advisor.</span>
+                  One conveyancer.{' '}
+                  <span className="text-[#D0A455]">Every step of the way.</span>
                 </>
               }
-              description="Most buyers juggle a conveyancer, a building inspector, and a JP — each speaking a different language. At Rocasa, you get all three in one office, working from the same file."
+              description="From your first contract review to the day you collect (or hand over) the keys, you deal directly with Khem — a licensed NSW conveyancer who knows your file inside out."
             />
 
             <div className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -61,9 +61,9 @@ export function About() {
                 description="Fully licensed under the NSW Conveyancing Licensing scheme with professional indemnity cover."
               />
               <FeatureItem
-                icon="building"
-                title="Engineer's perspective"
-                description="Structural background means we spot building issues your contract review would otherwise miss."
+                icon="key"
+                title="PEXA settlements"
+                description="Every settlement runs through PEXA — secure, electronic and faster than paper-based settlement."
               />
               <FeatureItem
                 icon="gavel"

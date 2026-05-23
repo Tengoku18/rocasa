@@ -9,9 +9,9 @@ const STEPS = [
       'Send us your property details and the Contract of Sale. We respond within one business day with a clear, fixed-fee quote.',
   },
   {
-    title: 'Contract review & engineering check',
+    title: 'Contract review & due diligence',
     description:
-      'We comb the contract for risk and arrange any structural inspection. You get a plain-English summary of what to negotiate.',
+      'We comb the contract for risk — special conditions, easements, zoning, disclosure. You get a plain-English summary of what to negotiate before you sign.',
   },
   {
     title: 'Searches & cooling-off',

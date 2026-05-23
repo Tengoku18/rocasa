@@ -8,30 +8,30 @@ export function ServiceSplit() {
       <Container size="xl">
         <div className="grid gap-6 py-16 sm:py-20 lg:grid-cols-2 lg:gap-8">
           <SplitCard
-            eyebrow="Technical"
-            title="Engineering Consultancy"
-            description="Structural reviews, dilapidation surveys and pre-purchase inspections — so you know exactly what you&rsquo;re buying before you sign."
+            eyebrow="For buyers"
+            title="Buying Property"
+            description="From the moment you spot a property to the day you collect the keys — every contract clause, search and settlement handled for you."
             points={[
-              'Pre-purchase structural assessments',
-              'Building defect & dilapidation reports',
-              'Compliance & design reviews',
+              'Contract of Sale review before you sign',
+              'Title, council & strata searches',
+              'PEXA settlement & key collection',
             ]}
             ctaHref="#services"
-            ctaLabel="Engineering services"
-            icon="building"
+            ctaLabel="Buying services"
+            icon="key"
           />
           <SplitCard
-            eyebrow="Legal"
-            title="Licensed Conveyancing"
-            description="Contract drafting, title searches and PEXA settlements — a calm, qualified hand on every step from offer to keys."
+            eyebrow="For sellers"
+            title="Selling Property"
+            description="Contract preparation, vendor disclosure and settlement coordination — so your sale moves smoothly from listing to settlement."
             points={[
-              'Contract of Sale preparation & review',
-              'Title and council searches',
-              'Secure electronic settlements via PEXA',
+              'Contract of Sale preparation',
+              'Vendor disclosure documents',
+              'Secure electronic settlement via PEXA',
             ]}
             ctaHref="#services"
-            ctaLabel="Conveyancing services"
-            icon="gavel"
+            ctaLabel="Selling services"
+            icon="document"
             highlighted
           />
         </div>
@@ -47,7 +47,7 @@ type SplitCardProps = {
   points: string[];
   ctaHref: string;
   ctaLabel: string;
-  icon: 'building' | 'gavel';
+  icon: 'key' | 'document';
   highlighted?: boolean;
 };
 

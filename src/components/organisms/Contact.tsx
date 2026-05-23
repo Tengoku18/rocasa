@@ -86,10 +86,16 @@ export function Contact() {
                   label="Service required"
                   name="service"
                   options={[
-                    'Contract of Sale review',
-                    'Property settlement (PEXA)',
-                    'Pre-purchase structural inspection',
-                    'Dilapidation survey',
+                    'Sale & purchase (residential or commercial)',
+                    'Off the plan / vacant land',
+                    'Pest & building inspection',
+                    'Split contract',
+                    'Transfer of lease',
+                    'Simultaneous settlement',
+                    'Strata report',
+                    'First home buyer assistance / FHOG',
+                    'Property division / separation on title',
+                    'Part tenancy / related party transfer',
                     'JP witnessing',
                     'Other',
                   ]}

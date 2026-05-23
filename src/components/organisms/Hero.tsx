@@ -4,7 +4,6 @@ import { Container } from '../atoms/Container';
 import { Button } from '../atoms/Button';
 import { Badge } from '../atoms/Badge';
 import { Icon } from '../atoms/Icon';
-import { StatCard } from '../molecules/StatCard';
 
 export function Hero() {
   return (
@@ -38,14 +37,14 @@ export function Hero() {
             </Badge>
 
             <h1 className="mt-6 font-[family-name:var(--font-open-sans)] text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Property transfers handled with
-              <span className="block text-[#D0A455]"> an engineer&rsquo;s eye.</span>
+              Property transfers handled
+              <span className="block text-[#D0A455]"> with care &amp; precision.</span>
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/75">
-              Sydney&rsquo;s only dual practice combining licensed conveyancing,
-              JP services, and structural engineering consultancy — so the
-              contract you sign and the building you buy are both safe.
+              Sydney&rsquo;s trusted licensed conveyancing practice — contract
+              reviews, secure PEXA settlements and JP services, all under one
+              roof, with clear fixed fees and one expert handling your matter.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-3">
@@ -62,7 +61,7 @@ export function Hero() {
                 <Icon name="check" size={16} className="text-[#D0A455]" /> PEXA electronic settlements
               </span>
               <span className="inline-flex items-center gap-2">
-                <Icon name="check" size={16} className="text-[#D0A455]" /> Engineer-led inspections
+                <Icon name="check" size={16} className="text-[#D0A455]" /> Fixed-fee transparency
               </span>
               <span className="inline-flex items-center gap-2">
                 <Icon name="check" size={16} className="text-[#D0A455]" /> NSW-wide service
@@ -124,9 +123,11 @@ export function Hero() {
                       <option value="" disabled>
                         Select a service
                       </option>
-                      <option>Contract of Sale review</option>
-                      <option>Pre-purchase structural inspection</option>
-                      <option>Property settlement (PEXA)</option>
+                      <option>Sale & purchase</option>
+                      <option>Off the plan / vacant land</option>
+                      <option>Pest & building inspection</option>
+                      <option>Simultaneous settlement</option>
+                      <option>First home buyer / FHOG</option>
                       <option>JP witnessing</option>
                       <option>Other</option>
                     </select>
@@ -141,13 +142,6 @@ export function Hero() {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="grid grid-cols-2 gap-6 border-t border-white/10 py-10 sm:grid-cols-4 sm:gap-8">
-          <StatCard invert value="500+" label="Settlements completed" />
-          <StatCard invert value="15+" label="Years experience" />
-          <StatCard invert value="100%" label="PEXA settlements" />
-          <StatCard invert value="5★" label="Average client rating" />
         </div>
       </Container>
     </section>
