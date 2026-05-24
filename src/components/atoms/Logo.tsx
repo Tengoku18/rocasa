@@ -8,8 +8,8 @@ type LogoProps = {
 export function Logo({ variant = 'dark', className = '' }: LogoProps) {
   const src =
     variant === 'dark'
-      ? '/_Transparent%20mono%20logo.png'
-      : '/_Transparent%20logo.png';
+      ? '/main-logo.png'
+      : '/main-logo.png';
 
   return (
     <a

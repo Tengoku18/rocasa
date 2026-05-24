@@ -45,7 +45,7 @@ export function Header() {
 
   return (
     <>
-      <div className="hidden lg:block bg-[#08162D] text-white text-xs">
+      <div className="hidden lg:block bg-navy-950 text-white text-xs border-b border-[#D0A455]/25">
         <Container size="xl">
           <div className="flex h-9 items-center justify-between">
             <div className="flex items-center gap-6 text-white/75">
@@ -73,8 +73,8 @@ export function Header() {
       <header
         className={`sticky top-0 z-40 w-full transition-all duration-300 ${
           scrolled
-            ? 'bg-white/95 backdrop-blur-md shadow-[0_4px_20px_-12px_rgba(8,22,45,0.18)]'
-            : 'bg-white'
+            ? 'bg-[#08162D]/95 backdrop-blur-md shadow-[0_4px_20px_-12px_rgba(0,0,0,0.4)]'
+            : 'bg-[#08162D]'
         }`}
       >
         <Container size="xl">
@@ -83,14 +83,20 @@ export function Header() {
 
             <nav aria-label="Primary" className="hidden lg:flex items-center gap-8">
               {NAV.map((item) => (
-                <NavLink key={item.href} href={item.href}>
+                <NavLink key={item.href} href={item.href} invert>
                   {item.label}
                 </NavLink>
               ))}
             </nav>
 
             <div className="hidden lg:flex items-center gap-3">
-              <Button href={business.phoneHref} variant="ghost" size="sm" iconLeft={<Icon name="phone" size={14} />}>
+              <Button
+                href={business.phoneHref}
+                variant="ghost"
+                size="sm"
+                iconLeft={<Icon name="phone" size={14} />}
+                className="text-white! hover:bg-white/10! hover:text-[#D0A455]!"
+              >
                 Call now
               </Button>
               <Button href="#contact" variant="primary" size="sm" iconRight={<Icon name="arrow-right" size={14} />}>
@@ -104,7 +110,7 @@ export function Header() {
               aria-expanded={open}
               aria-controls="mobile-sidebar"
               onClick={() => setOpen(true)}
-              className="lg:hidden grid h-11 w-11 place-items-center rounded-lg border border-[#08162D]/15 text-[#08162D] cursor-pointer transition-colors duration-200 hover:bg-[#FAF0BC]"
+              className="lg:hidden grid h-11 w-11 place-items-center rounded-lg border border-white/20 text-white cursor-pointer transition-colors duration-200 hover:bg-white/10"
             >
               <Icon name="menu" size={22} />
             </button>
