@@ -88,7 +88,7 @@ export function Contact() {
                   options={[
                     'Sale & purchase (residential or commercial)',
                     'Off the plan / vacant land',
-                    'Pest & building inspection',
+                    'Building & pest inspection',
                     'Split contract',
                     'Transfer of lease',
                     'Simultaneous settlement',

@@ -9,7 +9,7 @@ const FOOTER_NAV = [
     links: [
       { label: 'Sale & purchase', href: '#services' },
       { label: 'Off the plan & vacant land', href: '#services' },
-      { label: 'Pest & building inspection', href: '#services' },
+      { label: 'Building & pest inspection', href: '#services' },
       { label: 'Simultaneous settlement', href: '#services' },
       { label: 'Strata report', href: '#services' },
       { label: 'First home buyer help', href: '#services' },

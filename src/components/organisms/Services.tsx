@@ -20,9 +20,9 @@ const SERVICES = [
   },
   {
     icon: 'shield-check' as const,
-    title: 'Pest & Building Inspection',
+    title: 'Building & Pest Inspection',
     description:
-      'Coordination of independent pest and building inspections before exchange — so you know exactly what you’re buying.',
+      'Coordination of independent building and pest inspections before exchange — so you know exactly what you’re buying.',
     bullets: ['Licensed inspector network', 'Pre-exchange reporting', 'Repair-cost guidance'],
   },
   {

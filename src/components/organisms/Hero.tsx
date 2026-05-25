@@ -132,7 +132,7 @@ export function Hero() {
                       </option>
                       <option>Sale & purchase</option>
                       <option>Off the plan / vacant land</option>
-                      <option>Pest & building inspection</option>
+                      <option>Building & pest inspection</option>
                       <option>Simultaneous settlement</option>
                       <option>First home buyer / FHOG</option>
                       <option>JP witnessing</option>
