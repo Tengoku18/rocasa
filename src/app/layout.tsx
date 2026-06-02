@@ -17,7 +17,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: 'Rocasa Conveyancing | Licensed Conveyancer & JP — Sydney NSW',
+  title: 'Rocasa Conveyancing | Licensed Conveyancer & JP, Sydney NSW',
   description:
     'Sydney-based licensed conveyancing and JP services. Contract reviews, property settlements via PEXA, off-the-plan and business conveyancing across NSW.',
   keywords: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Rocasa Conveyancing' }],
   openGraph: {
-    title: 'Rocasa Conveyancing — Sydney Licensed Conveyancer & JP',
+    title: 'Rocasa Conveyancing, Sydney Licensed Conveyancer & JP',
     description:
       'Property transfers handled with care. Licensed conveyancer and JP, based in Sydney NSW.',
     type: 'website',

@@ -35,7 +35,7 @@ export function Footer() {
           <div className="lg:col-span-5">
             <Logo variant="light" />
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-white/65">
-              Licensed Conveyancer &amp; JP (NSW) — safeguarding property
+              Licensed Conveyancer &amp; JP (NSW), safeguarding property
               transactions across Sydney and New South Wales with fixed fees
               and PEXA settlements.
             </p>

@@ -10,7 +10,7 @@ export function ServiceSplit() {
           <SplitCard
             eyebrow="For buyers"
             title="Buying Property"
-            description="From the moment you spot a property to the day you collect the keys — every contract clause, search and settlement handled for you."
+            description="From the moment you spot a property to the day you collect the keys, every contract clause, search and settlement handled for you."
             points={[
               'Contract of Sale review before you sign',
               'Title, council & strata searches',
@@ -23,7 +23,7 @@ export function ServiceSplit() {
           <SplitCard
             eyebrow="For sellers"
             title="Selling Property"
-            description="Contract preparation, vendor disclosure and settlement coordination — so your sale moves smoothly from listing to settlement."
+            description="Contract preparation, vendor disclosure and settlement coordination, so your sale moves smoothly from listing to settlement."
             points={[
               'Contract of Sale preparation',
               'Vendor disclosure documents',

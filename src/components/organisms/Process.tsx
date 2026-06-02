@@ -11,7 +11,7 @@ const STEPS = [
   {
     title: 'Contract review & due diligence',
     description:
-      'We comb the contract for risk — special conditions, easements, zoning, disclosure. You get a plain-English summary of what to negotiate before you sign.',
+      'We comb the contract for risk, special conditions, easements, zoning, disclosure. You get a plain-English summary of what to negotiate before you sign.',
   },
   {
     title: 'Searches & cooling-off',
@@ -21,7 +21,7 @@ const STEPS = [
   {
     title: 'PEXA electronic settlement',
     description:
-      'Funds and title transfer securely via PEXA. You collect the keys — we handle every detail behind the scenes.',
+      'Funds and title transfer securely via PEXA. You collect the keys, we handle every detail behind the scenes.',
   },
 ];
 
@@ -39,7 +39,7 @@ export function Process() {
                   <span className="text-[#D0A455]">four-step process.</span>
                 </>
               }
-              description="Whether you're a first-home buyer or a seasoned investor, you'll always know exactly what's happening with your matter — and what's next."
+              description="Whether you're a first-home buyer or a seasoned investor, you'll always know exactly what's happening with your matter, and what's next."
             />
           </div>
           <div className="lg:col-span-7">

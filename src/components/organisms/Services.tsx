@@ -6,9 +6,9 @@ import { Badge } from '../atoms/Badge';
 const SERVICES = [
   {
     icon: 'home' as const,
-    title: 'Sale & Purchase — Residential & Commercial',
+    title: 'Sale & Purchase, Residential & Commercial',
     description:
-      'End-to-end conveyancing for residential and commercial property — from Contract of Sale through to PEXA settlement.',
+      'End-to-end conveyancing for residential and commercial property, from Contract of Sale through to PEXA settlement.',
     bullets: ['Residential homes & units', 'Commercial & industrial', 'PEXA e-settlement'],
   },
   {
@@ -22,49 +22,49 @@ const SERVICES = [
     icon: 'shield-check' as const,
     title: 'Building & Pest Inspection',
     description:
-      'Coordination of independent building and pest inspections before exchange — so you know exactly what you’re buying.',
+      'Coordination of independent building and pest inspections before exchange, so you know exactly what you’re buying.',
     bullets: ['Licensed inspector network', 'Pre-exchange reporting', 'Repair-cost guidance'],
   },
   {
     icon: 'scale' as const,
     title: 'Split Contract',
     description:
-      'Structured house-and-land split contracts handled end-to-end — land transfer and building works coordinated cleanly.',
+      'Structured house-and-land split contracts handled end-to-end, land transfer and building works coordinated cleanly.',
     bullets: ['Land + build coordination', 'Stamp duty optimisation', 'Builder liaison'],
   },
   {
     icon: 'briefcase' as const,
     title: 'Purchase & Sale of Business',
     description:
-      'Conveyancing for business acquisitions and sales — contract review, asset transfer, lease assignment and goodwill handled end-to-end.',
+      'Conveyancing for business acquisitions and sales, contract review, asset transfer, lease assignment and goodwill handled end-to-end.',
     bullets: ['Asset & share transfers', 'Lease & licence assignment', 'Vendor & purchaser due diligence'],
   },
   {
     icon: 'document' as const,
     title: 'Transfer of Lease',
     description:
-      'Lease transfers for tenants, landlords or business buyers — assigning rights and obligations correctly under NSW law.',
+      'Lease transfers for tenants, landlords or business buyers, assigning rights and obligations correctly under NSW law.',
     bullets: ['Tenant & landlord consent', 'Bond & security transfer', 'Lease assignment'],
   },
   {
     icon: 'clock' as const,
     title: 'Simultaneous Settlement',
     description:
-      'Selling and buying on the same day — coordinated cleanly so you avoid bridging finance and double-moves.',
+      'Selling and buying on the same day, coordinated cleanly so you avoid bridging finance and double-moves.',
     bullets: ['Sale + purchase same day', 'Lender coordination', 'Single move date'],
   },
   {
     icon: 'gavel' as const,
     title: 'JP Witnessing',
     description:
-      'Official witnessing of statutory declarations, affidavits and certification of true copies — by appointment.',
+      'Official witnessing of statutory declarations, affidavits and certification of true copies, by appointment.',
     bullets: ['Stat decs & affidavits', 'Certified copies', 'On-site availability'],
   },
   {
     icon: 'building' as const,
     title: 'Strata Report',
     description:
-      'Strata search and report review for apartments and townhouses — uncovering by-laws, levies, special funds and disputes.',
+      'Strata search and report review for apartments and townhouses, uncovering by-laws, levies, special funds and disputes.',
     bullets: ['Owners corporation records', 'Levy & special-fund review', 'By-law compliance'],
   },
   {
@@ -78,21 +78,21 @@ const SERVICES = [
     icon: 'search' as const,
     title: 'Property Division',
     description:
-      'Property settlements arising from divorce, family arrangements or business splits — handled with discretion and care.',
+      'Property settlements arising from divorce, family arrangements or business splits, handled with discretion and care.',
     bullets: ['Family law settlements', 'Title restructure', 'Stamp duty exemptions'],
   },
   {
     icon: 'key' as const,
     title: 'Separation on Title',
     description:
-      'Removing or adding parties to title following separation, divorce or estate matters — done cleanly and quickly.',
+      'Removing or adding parties to title following separation, divorce or estate matters, done cleanly and quickly.',
     bullets: ['Title transfers', 'Spousal exemptions', 'Land Registry lodgement'],
   },
   {
     icon: 'users' as const,
     title: 'Part Tenancy & Related Party Transfers',
     description:
-      'Transfers between family members, business partners or trusts — including part-ownership and related-party arrangements.',
+      'Transfers between family members, business partners or trusts, including part-ownership and related-party arrangements.',
     bullets: ['Family & spousal transfers', 'Trust & partnership transfers', 'Tenancy share changes'],
   },
 ];

@@ -27,7 +27,7 @@ export function CTA() {
                 <span className="text-[#D0A455]">Settle without stress.</span>
               </h2>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-white/75">
-                Send your Contract of Sale today — we&rsquo;ll come back with a
+                Send your Contract of Sale today, we&rsquo;ll come back with a
                 fixed-fee quote and a clear timeline within one business day.
               </p>
             </div>

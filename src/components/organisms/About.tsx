@@ -6,7 +6,7 @@ import { FeatureItem } from '../molecules/FeatureItem';
 
 export function About() {
   return (
-    <section id="about" className="relative bg-[#FAF0BC]/30 py-20 sm:py-28">
+    <section id="about" className="relative overflow-hidden bg-[#FAF0BC]/30 py-20 sm:py-28">
       <Container size="xl">
         <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
           <div className="relative">
@@ -51,7 +51,7 @@ export function About() {
                   <span className="text-[#D0A455]">Every step of the way.</span>
                 </>
               }
-              description="From your first contract review to the day you collect (or hand over) the keys, you deal directly with Khem — a licensed NSW conveyancer who knows your file inside out."
+              description="From your first contract review to the day you collect (or hand over) the keys, you deal directly with Khem, a licensed NSW conveyancer who knows your file inside out."
             />
 
             <div className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -63,7 +63,7 @@ export function About() {
               <FeatureItem
                 icon="key"
                 title="PEXA settlements"
-                description="Every settlement runs through PEXA — secure, electronic and faster than paper-based settlement."
+                description="Every settlement runs through PEXA, secure, electronic and faster than paper-based settlement."
               />
               <FeatureItem
                 icon="gavel"
