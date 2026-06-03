@@ -158,22 +158,29 @@ export function Hero() {
                     <span className="text-xs font-semibold text-[#08162D]/70">
                       Service required
                     </span>
-                    <select
-                      name="service"
-                      className="mt-1 h-11 w-full rounded-lg border border-[#08162D]/15 bg-white px-3 text-sm text-[#08162D] transition-colors outline-none focus:border-[#D0A455] focus:ring-2 focus:ring-[#D0A455]/30"
-                      defaultValue={state.values?.service ?? ''}
-                    >
-                      <option value="" disabled>
-                        Select a service
-                      </option>
-                      <option>Sale & purchase</option>
-                      <option>Off the plan / vacant land</option>
-                      <option>Building & pest inspection</option>
-                      <option>Simultaneous settlement</option>
-                      <option>First home buyer / FHOG</option>
-                      <option>JP witnessing</option>
-                      <option>Other</option>
-                    </select>
+                    <div className="relative mt-1">
+                      <select
+                        name="service"
+                        className="h-11 w-full appearance-none rounded-lg border border-[#08162D]/15 bg-white px-3 pr-10 text-sm text-[#08162D] transition-colors outline-none focus:border-[#D0A455] focus:ring-2 focus:ring-[#D0A455]/30"
+                        defaultValue={state.values?.service ?? ''}
+                      >
+                        <option value="" disabled>
+                          Select a service
+                        </option>
+                        <option>Sale & purchase</option>
+                        <option>Off the plan / vacant land</option>
+                        <option>Building & pest inspection</option>
+                        <option>Simultaneous settlement</option>
+                        <option>First home buyer / FHOG</option>
+                        <option>JP witnessing</option>
+                        <option>Other</option>
+                      </select>
+                      <Icon
+                        name="chevron-down"
+                        size={18}
+                        className="pointer-events-none absolute top-1/2 right-3 -translate-y-1/2 text-[#08162D]/50"
+                      />
+                    </div>
                   </label>
                   <HeroSubmitButton />
                   <p className="text-center text-[11px] text-[#475569]">

@@ -25,6 +25,7 @@ export type IconName =
   | 'home'
   | 'search'
   | 'chevron-right'
+  | 'chevron-down'
   | 'users'
   | 'briefcase';
 
@@ -166,6 +167,12 @@ export function Icon({ name, size = 20, className = '', ...rest }: IconProps) {
       return (
         <svg {...common}>
           <path d="m9 6 6 6-6 6" />
+        </svg>
+      );
+    case 'chevron-down':
+      return (
+        <svg {...common}>
+          <path d="m6 9 6 6 6-6" />
         </svg>
       );
     case 'users':

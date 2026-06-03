@@ -262,21 +262,28 @@ function SelectField({
       <span className="text-xs font-semibold tracking-[0.16em] text-white/60 uppercase">
         {label}
       </span>
-      <select
-        id={name}
-        name={name}
-        defaultValue={defaultValue}
-        className="mt-2 h-12 w-full rounded-lg border border-white/15 bg-white/5 px-4 text-sm text-white transition-colors duration-200 outline-none focus:border-[#D0A455] focus:ring-2 focus:ring-[#D0A455]/30"
-      >
-        <option value="" disabled className="bg-[#08162D]">
-          Select a service
-        </option>
-        {options.map((o) => (
-          <option key={o} value={o} className="bg-[#08162D]">
-            {o}
+      <div className="relative mt-2">
+        <select
+          id={name}
+          name={name}
+          defaultValue={defaultValue}
+          className="h-12 w-full appearance-none rounded-lg border border-white/15 bg-white/5 px-4 pr-11 text-sm text-white transition-colors duration-200 outline-none focus:border-[#D0A455] focus:ring-2 focus:ring-[#D0A455]/30"
+        >
+          <option value="" disabled className="bg-[#08162D]">
+            Select a service
           </option>
-        ))}
-      </select>
+          {options.map((o) => (
+            <option key={o} value={o} className="bg-[#08162D]">
+              {o}
+            </option>
+          ))}
+        </select>
+        <Icon
+          name="chevron-down"
+          size={18}
+          className="pointer-events-none absolute top-1/2 right-4 -translate-y-1/2 text-white/50"
+        />
+      </div>
     </label>
   );
 }
