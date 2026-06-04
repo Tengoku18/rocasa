@@ -101,7 +101,7 @@ async function deliverEnquiry(data: EnquiryEmail): Promise<DeliverResult> {
 const CONFIG_ERROR =
   'Sorry, the form is temporarily unavailable. Please call or email us directly.';
 const SEND_ERROR = 'Sorry, something went wrong sending your enquiry. Please try again or call us.';
-const SUCCESS = "Thanks, your enquiry is on its way. We'll be in touch within one business day.";
+const SUCCESS = 'Thank you for your enquiry. One of our team members will get in touch with you soon.';
 
 export async function sendContactEnquiry(
   _prevState: ContactFormState,
